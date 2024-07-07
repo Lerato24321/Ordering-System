@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Margarine&family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">
+    
+    <title>Burger Ordering System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+
+
+
+
+<body>
+
+
+   <div class="header">
+    <h1 class="introductory-heading">Jay's Burger </h1>
+    <p class="introductory-paragraph"> The best burger in town ! </p>
+    </div>
+
+
+    <div class="container">
+
+
+        <div>
+          <label for="chicken-burger">
+          <input type="radio" id="chicken" name="burger" value="8.99" onchange="P(this)">
+          <img  src="burger.png" class="burger-img" alt="picture of a chicken burger">
+
+
+          </label>
+
+
+
+        <label for="beef-burger">
+        <input type="radio" id="beef" name="burger" value="8.99" onchange="P(this)">
+        <img  src="beef-burger.png" class="burger-img" alt="picture of a beef burger">
+
+
+        </label>
+       </div>
+
+
+ 
+       <div>
+
+          <label for="vegetarian-wrap">
+          <input type="radio" id="vegetarian" name="burger" value="6.99" onchange="P(this)">
+          <img  src="vege-wrap.png" class="burger-img" alt="picture of a  vegetarian wrap">
+
+
+          </label>
+
+
+
+          <label for="salmon-burger">
+          <input type="radio" id="salmon" name="burger" value="9.99" onchange="P(this)">
+          <img  src="salmon-burger.png" class="burger-img" alt="picture of a chicken burger">
+
+
+         </label>
+
+       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="price-section">
+
+     <label for="price"> Price </label>
+
+     <input readonly type="text" name="burgerPrice" id="realPrice">
+</div>
+
+
+ <div class="quantity-section">
+    <label for="quantity">Quantity</label>
+    <input type="text" id="Quan" name="quantity" onkeypress="return checkNumber(event)">
+ </div>
+
+
+ <div>
+   <label for="cashTendered">Cash Tendered</label>
+   <input type="text" id="cT" name="cashTendered" onkeypress="return checkNumber(event)">
+ </div>
+
+
+
+
+
+<label for="noneDisc">
+    <input type="radio" id="noneDisc" name="disc" value="0%" onchange="sync(this)">
+    <img src="forbidden_1866483.png" class= "icon"  alt="forbidden logo">
+</label>
+
+
+<label for="disabled">
+    <input type="radio" id="pwdDisc" name="disc" value="20%" onchange="sync(this)">
+    <img src="disabled.png" class= "icon"  alt="forbidden logo">
+</label>
+
+
+<label for="seniorDisc">
+    <input type="radio" id="seniorDisc" name="disc" value="20%" onchange="sync(this)">
+    <img src="grandparents.png" class= "icon"  alt="forbidden logo">
+</label>
+
+
+
+<div class="discount-section">
+    <label for="discount"> Discount </label>
+      <input readonly type="text" name="discount" id="mydisc">
+</div>
+
+
+<div class="discount-section">
+    <input class="btn" id="compute" type="button" value="Calculate" onclick="compute()">
+    <input class="btn" type="reset" value="Reset" onclick="window.location.reload()">
+</div>
+
+
+
+<div class="discount-section">
+    <label for="total"> Total </label>
+      <input readonly type="text" id="total" name="Total" >
+</div>
+
+
+<div class="discount-section">
+    <label for="total"> Discounted Total </label>
+      <input readonly type="text" id="dt" name="discTotal" >
+</div>
+
+
+<div class="discount-section">
+    <label for="total"> Change </label>
+      <input readonly type="text" id="C" name="Change" >
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>

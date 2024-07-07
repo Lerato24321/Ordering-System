@@ -1,0 +1,95 @@
+
+
+
+
+
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: "Rubik Glitch Pop", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+div {
+    display: block;
+}
+
+div label {
+    display: inline-block;
+    width: 150px;
+}
+
+div input {
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+
+
+div .introductory-heading {
+    margin-top: 50px;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px pink;
+}
+
+
+div .introductory-paragraph {
+    margin-top: -30px;
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: normal;
+} 
+
+[type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+label .burger-img  {
+width: 100px;
+padding-left: 430px;
+cursor: pointer;
+}
+
+label .icon {
+    width: 30px;
+    
+}
+
+[type=radio] {
+    cursor: pointer;
+}
+
+[type=radio] {
+   outline: 2px solid #af00;
+} 
+
+
+.container {
+    background-color: rgb(225, 187, 194);
+    padding: 30px ;
+    width: 1100px;
+    margin: 50px 60px;
+    border-radius: 30px;
+}
+
+.btn {
+    display: inline-block;
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
