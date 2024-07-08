@@ -21,7 +21,7 @@
 
    <div class="header">
     <h1 class="introductory-heading">Jay's Burgers </h1>
-    <p class="introductory-paragraph"> The best burger in town ! </p>
+    <p class="introductory-paragraph"> The best burger in town! </p>
     </div>
 
 
@@ -29,7 +29,7 @@
 
 
         <div>
-          <label for="chicken-burger">
+          <label>
           <input type="radio" id="chicken" name="burger" value="8.99" onchange="P(this)">
           <img  src="burger.png" class="burger-img" alt="picture of a chicken burger">
 
@@ -38,7 +38,7 @@
 
 
 
-        <label for="beef-burger">
+        <label>
         <input type="radio" id="beef" name="burger" value="8.99" onchange="P(this)">
         <img  src="beef-burger.png" class="burger-img" alt="picture of a beef burger">
 
@@ -50,7 +50,7 @@
  
        <div>
 
-          <label for="vegetarian-wrap">
+          <label>
           <input type="radio" id="vegetarian" name="burger" value="6.99" onchange="P(this)">
           <img  src="vege-wrap.png" class="burger-img" alt="picture of a  vegetarian wrap">
 
@@ -59,7 +59,7 @@
 
 
 
-          <label for="salmon-burger">
+          <label>
           <input type="radio" id="salmon" name="burger" value="9.99" onchange="P(this)">
           <img  src="salmon-burger.png" class="burger-img" alt="picture of a chicken burger">
 
@@ -67,16 +67,6 @@
          </label>
 
        </div>
-
-
-
-
-
-
-
-
-
-
 
 
 </div>
@@ -88,39 +78,39 @@
 
 <div class="price-section">
 
-     <label for="price"> Price </label>
+     <label> Price </label>
 
      <input readonly type="text" name="burgerPrice" id="realPrice">
 </div>
 
 
  <div class="quantity-section">
-    <label for="quantity">Quantity</label>
+    <label>Quantity</label>
     <input type="text" id="Quan" name="quantity" onkeypress="return checkNumber(event)">
  </div>
 
 
  <div class="cash-section">
-   <label for="cashTendered">Cash Tendered</label>
+   <label>Cash Tendered</label>
    <input type="text" id="cT" name="cashTendered" onkeypress="return checkNumber(event)">
  </div>
 
 
 
 <div class="icons">
-<label for="noneDisc">
+<label>
     <input type="radio" id="noneDisc" name="disc" value="0%" onchange="sync(this)">
     <img src="forbidden_1866483.png" class= "icon"  alt="forbidden logo">
 </label>
 
 
-<label for="disabled">
+<label>
     <input type="radio" id="pwdDisc" name="disc" value="20%" onchange="sync(this)">
-    <img src="disabled.png" class= "icon"  alt="forbidden logo">
+    <img src="disabled.png" class= "icon"  alt="disabled logo">
 </label>
 
 
-<label for="seniorDisc">
+<label >
     <input type="radio" id="seniorDisc" name="disc" value="20%" onchange="sync(this)">
     <img src="grandparents.png" class= "icon"  alt="forbidden logo">
 </label>
@@ -129,7 +119,7 @@
 
 
 <div class="discount-section">
-    <label for="discount"> Discount </label>
+    <label> Discount </label>
       <input readonly type="text" name="discount" id="mydisc">
 </div>
 
@@ -142,19 +132,19 @@
 
 
 <div class="discount-section">
-    <label for="total"> Total </label>
+    <label> Total </label>
       <input readonly type="text" id="total" name="Total" >
 </div>
 
 
 <div class="discount-section">
-    <label for="total"> Discounted Total </label>
+    <label> Discounted Total </label>
       <input readonly type="text" id="dt" name="discTotal" >
 </div>
 
 
 <div class="discount-section">
-    <label for="total"> Change </label>
+    <label> Change </label>
       <input readonly type="text" id="C" name="Change" >
 </div>
 
