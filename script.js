@@ -1,4 +1,4 @@
-// let firstName = prompt ("What is your first name?");
+//let firstName = prompt ("What is your first name?");
 if (firstName.length>0 ) {
     alert(`Welcome to Jay's Burgers, ${firstName}. Please place your order 😊`);
 } else {
@@ -14,9 +14,6 @@ const vege = document.getElementById("vegetarian").value = "6.99";
 const salmon = document.getElementById("salmon").value = "9.99";
 
 
-const NONE = document.getElementById("noneDisc").value = "0";
-const PwD = document.getElementById("pwdDisc").value = "0.20";
-const Senior = document.getElementById("seniorDisc").value = "0.20";
 
 
 const quantity = document.getElementById("Quan").value;
@@ -38,21 +35,14 @@ if (document.getElementById("chicken").checked) {
 document.getElementById("total").value = Total ;
 
 
-if (document.getElementById("pwdDisc").checked) {
-    discTotal = Total - (Total * PwD);
-} else if (document.getElementById("seniorDisc").checked) {
-    discTotal = Total - (Total * Senior);
-} else if (document.getElementById("noneDisc").checked) {
-    discTotal = Total - (Total * NONE);
-}
-document.getElementById("dt").value = discTotal;
+document.getElementById("cT").value = cashT;
 
 
-const Change = cashT - discTotal ;
+const Change = cashT - Total ;
 
 
-if (cashT >= discTotal ) {
-    document.getElementById ("C").value = Change;
+if ( cashT >= Total ) {
+    document.getElementById ("C").value = Change.toFixed(2);
 } else {
     alert ("You don't have enough money. Please add some more money.") ;
 }
