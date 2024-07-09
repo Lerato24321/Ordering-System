@@ -1,9 +1,10 @@
-//let firstName = prompt ("What is your first name?");
+let firstName = prompt ("What is your first name?");
 if (firstName.length>0 ) {
     alert(`Welcome to Jay's Burgers, ${firstName}. Please place your order 😊`);
 } else {
     alert(`Please type first name before proceeding. ☹️`);
 }
+
 
 
 
@@ -71,3 +72,14 @@ function checkNumber (event) {
     return true;
 
 }
+
+
+
+
+function placeOrder () {
+   alert ("Thank you. Order has been placed! 💌") 
+}
+
+
+
+document.getElementById("place-order").addEventListener("click", placeOrder);

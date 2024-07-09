@@ -95,6 +95,28 @@ div .introductory-paragraph {
 } 
 
 
+div .order-button {
+   display: block;
+    width: 150px;
+    margin: 0 auto;
+    height: 30px;
+    border: none;
+    background-color: pink;
+    color: white;
+    border-radius: 10px;
+}
+
+
+
+
+div .order-button:hover {
+   
+    background-color: rgb(198, 192, 192);
+    color: rgb(118, 69, 77);
+    border: 1px solid rgb(181, 82, 99);
+}
+
+
  .introductory-paragraph-2 {
     text-align: center;
     margin-bottom: -50px;
