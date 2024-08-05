@@ -51,7 +51,7 @@ if ( cashT >= Total ) {
 }
 
 
-//function for showing Birger Prices 
+//function for showing Burger Prices 
 function P(price) {
     const burgerPrice = document.getElementById("realPrice");
     realPrice.value = price.value ;
@@ -64,14 +64,6 @@ function sync(myDiscount) {
 }
 
 
-//function for NumberKey Only 
-function checkNumber (event) {
-    const aCode = event.which ? event.which : event.keyCode;
-
-    if (aCode > 31 && (aCode <48 || aCode > 57)) return false; 
-    return true;
-
-}
 
 
 
