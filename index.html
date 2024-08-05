@@ -26,128 +26,109 @@
 
     <p class="introductory-paragraph-2">Please choose your order from the following:</p>
 
+    <!-- Menu -->
 
     <div class="container">
-
+   
+      <!-- First row -->
 
         <div>
+
+          <label class="menu menu-1">
             <h4 class="burger-header">Chicken</h4>
-          <label>
-          <input type="radio" id="chicken" name="burger" value="8.99" onchange="P(this)">
-          <img  src="burger.png" class="burger-img-1" alt="picture of a chicken burger">
-          <h4 class="burger-price">$8.99</h4>
+            <input type="radio" id="chicken" name="burger" value="8.99" onchange="P(this)">
+            <img  src="burger.png" class="burger-img" alt="picture of a chicken burger">
+            <h4 class="burger-price">$8.99</h4>
           </label>
 
 
               
-        <label>
-
-<h4 class="burger-heading-2">Beef</h4>
-        <input type="radio" id="beef" name="burger" value="8.99" onchange="P(this)">
-        <img  src="beef-burger.png" class="burger-img-1" alt="picture of a beef burger">
-        <h4 class="burger-price-2">$8.99</h4>
-   
-
-
+        <label class="menu menu-2">
+          <h4 class="burger-header">Beef</h4>
+          <input type="radio" id="beef" name="burger" value="8.99" onchange="P(this)">
+          <img  src="beef-burger.png" class="burger-img" alt="picture of a beef burger">
+          <h4 class="burger-price">$8.99</h4>
         </label>
        </div>
 
 
+       <!-- second row -->
  
        <div>
-  <h4 class="burger-header">Vegetarian</h4>
-          <label>
+
+        <label class="menu menu-3">
+          <h4 class="burger-header">Vegetarian</h4>
           <input type="radio" id="vegetarian" name="burger" value="6.99" onchange="P(this)">
-          <img  src="vege-wrap.png" class="burger-img-1" alt="picture of a  vegetarian wrap">
-          <h4 class="burger-price-3">$6.99</h4>
-    </label>
+          <img  src="vege-wrap.png" class="burger-img" alt="picture of a  vegetarian wrap">
+          <h4 class="burger-price">$6.99</h4>
+        </label>
 
 
 
-          <label>
-<h4 class="burger-heading-4">Salmon</h4>
+        <label class="menu menu-4">
+          <h4 class="burger-header">Salmon</h4>
           <input type="radio" id="salmon" name="burger" value="9.99" onchange="P(this)">
           <img  src="salmon-burger.png" class="burger-img-2" alt="picture of a chicken burger">
-   <h4 class="burger-price-4">$9.99</h4>
-
-         </label>
-
-       </div>
-
-
-</div>
+          <h4 class="burger-price">$9.99</h4>
+        </label>
+     
+      </div>
+    </div>
 
 
-
+<!-- shows price for chosen item, lets you adjust quantity and your amount of cash -->
 
 <div class="full-price-section">
 
-<div class="price-section">
-
-     <label> Price </label>
-
-     <input readonly type="text" name="burgerPrice" id="realPrice">
-</div>
+  <div class="price-section">
+  <label class="summary"> Price </label>
+  <input class="summary margin" readonly type="text" name="burgerPrice" id="realPrice">
+  </div>
 
 
- <div class="quantity-section">
-    <label>Quantity</label>
-    <input type="text" id="Quan" name="quantity" onkeypress="return checkNumber(event)">
- </div>
+  <div class="quantity-section">
+    <label class="summary">Quantity</label>
+    <input class="summary margin" type="text" id="Quan" name="quantity" onkeypress="return checkNumber(event)">
+  </div>
 
 
  <div class="cash-section">
-   <label>Cash Tendered</label>
-   <input type="text" id="cT" name="cashTendered" onkeypress="return checkNumber(event)">
+   <label class="summary">Cash Tendered</label>
+   <input class="summary margin" type="text" id="cT" name="cashTendered" onkeypress="return checkNumber(event)">
  </div>
 
 
-
-
-
-
-
-
-
-
-<div class="discount-section">
+ <div class="discount-section">
     <input class="btn" id="compute" type="button" value="Calculate" onclick="compute()">
-    <input class="btn" type="reset" value="Reset" onclick="window.location.reload()">
-</div>
+    <input class="btn margin" type="reset" value="Reset" onclick="window.location.reload()">
+ </div>
 
 
+ <!-- shows you total price and your change -->
 
-<div class="discount-section">
-    <label> Total </label>
-      <input readonly type="text" id="total" name="Total" >
-</div>
+<div class="total-price-section">
 
+   <div class="total-section">
+    <label class="summary"> Total </label>
+    <input class="summary margin" readonly type="text" id="total" name="Total" >
+   </div>
 
-
-
-
-<div class="discount-section">
-    <label> Change </label>
-      <input readonly type="text" id="C" name="Change" >
-</div>
-
+   <div class="change-section">
+      <label class="summary"> Change </label>
+      <input class="summary margin" readonly type="text" id="C" name="Change" >
+   </div>
 
 
-
-</div>
-
-
-
-
-<div class="place-order">
-<input class="btn order-button" id="place-order" type="button" value="Place Order" onclick="placeOrder()">
-
+   <!-- lets you place the order -->
   
-</div>
 
+    <div>
+      <input class="btn order-button" id="place-order" type="button" value="Place Order" onclick="placeOrder()"> 
+    </div>
 
+    </div>
+    <script src="script.js"></script>
 
-
-</body>
+  </body>
 
 </html>
