@@ -1,168 +1,95 @@
 
 
-
-
-
-
-h1, h2 {
-   font-family: "Rubik Glitch Pop", system-ui;
-  font-weight: 400;
-  font-style: normal;
+h1 {
+    font-family: "Rubik Glitch Pop", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
-div {
-    display: block;
-}
-
-
-div .burger-header {
-    margin-left: 450px;
-}
-
-
-div .burger-price {
-    margin-top: -20px;
-    margin-left: 465px;
-
-}
-
-div .burger-heading-2 {
-    margin-top: -40px;
-    margin-left: 460px;
-}
-
-div .burger-price-2 {
-    margin-left: 460px;
-    margin-top: -20px;
-}
-
-div .burger-price-3 {
-    margin-left: 465px;
-    margin-top: -2px;
-}
-
-div .burger-heading-4 {
-    margin-left: 460px;
-    margin-top: -40px;
-}
-
-
-div .burger-price-4 {
-    margin-left: 465px;
-    margin-top: -15px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-div label {
-    display: inline-block;
-    width: 150px;
-}
-
-div input {
-    display: inline-block;
-    width: 150px;
-    margin-bottom: 10px;
-}
-
-
-
-div .introductory-heading {
+.introductory-heading {
     margin-top: 50px;
     font-size: 50px;
     text-align: center;
     text-shadow: 2px 2px pink;
 }
 
-
-div .introductory-paragraph {
+.introductory-paragraph {
     margin-top: -30px;
     text-align: center;
     font-family: "Cormorant Garamond", serif;
-    font-weight: 300;
-    font-style: normal;
-} 
-
-
-div .order-button {
-   display: block;
-    width: 150px;
-    margin: 0 auto;
-    height: 30px;
-    border: none;
-    background-color: pink;
-    color: white;
-    border-radius: 10px;
-}
-
-
-
-
-div .order-button:hover {
-   
-    background-color: rgb(198, 192, 192);
-    color: rgb(118, 69, 77);
-    border: 1px solid rgb(181, 82, 99);
-}
-
-
- .introductory-paragraph-2 {
-    text-align: center;
-    margin-bottom: -50px;
-    font-family: "Cormorant Garamond", serif;
     font-weight: 500;
     font-style: normal;
-}
-
-[type=radio] {
-    position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-[type=radio] + img {
-
-width: 100px;
-padding-left: 430px;
-cursor: pointer;
-}
-
-
-label .burger-img-1 {
-    margin-top: -40px;
-}
-
-label .burger-img-2 {
-    margin-top: -6px;
-}
-
-
-
-
-
-[type=radio]:checked + img{
-   outline: 2px solid #ab527800;
 } 
 
+.introductory-paragraph-2 {
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 800;
+    font-style: normal;
+}
 
 .container {
     background-color: rgb(225, 187, 194);
-    padding: 30px ;
+    padding: 30px;
     width: 1100px;
-    margin: 50px 60px;
+    margin: 20px auto;
     border-radius: 30px;
+    text-align: center;
+}
+
+.menu.burger-header {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.burger-price {
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.burger-img {
+    display: block;
+    margin: 0 auto;
+}
+
+.menu {
+    display: inline-block;
+    width: 110px;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 10px;
+    vertical-align: top;
+    transition: background-color 0.3s;
+}
+
+.menu.highlight {
+    background-color: #ab5279;
+    color: white;
+}
+
+.menu:hover {
+    outline: 4px solid #ab5279;
+}
+
+input[type=radio] {
+    position: absolute;
+    opacity: 0;
+}
+
+input[type=radio] + img {
+    width: 100px;
+    cursor: pointer;
+}
+
+.summary {
+    display: inline-block;
+    width: 150px;
+}
+
+.margin {
+    margin-bottom: 10px;
 }
 
 .btn {
@@ -170,16 +97,31 @@ label .burger-img-2 {
     width: 100px;
 }
 
-
 .full-price-section {
     text-align: center;
+    display: none;
 }
 
+.total-price-section {
+    text-align: center;
+    display: none;
+}
 
+.order-button {
+    display: block;
+    width: 150px;
+    margin: 0px auto;
+    height: 30px;
+    border: none;
+    background-color: pink;
+    color: white;
+    border-radius: 10px;
+}
 
-.icon {
-    width: 30px !important;
-    margin-left: -350px;
+.btn:hover {
+    background-color: rgb(198, 192, 192);
+    color: rgb(118, 69, 77);
+    border: 2px solid rgb(181, 82, 99);
 }
 
 
